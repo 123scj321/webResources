@@ -1,0 +1,85 @@
+
+<!--我的优惠券  -->
+<!--我的优惠券bigbox  -->
+
+<view class="myCouponContainer">
+<!--一个券 -->
+  <view class="myCouponRow" wx:for="{{coupon}}"
+  wx:for-index="index"wx:for-item="item">
+  <!--背景图  -->
+    <image src="../../images/myCoupon/myCouponBg.png"></image>
+    <!--优惠券内容  -->
+    <view class="myCouponDetail">
+      <view class="myCouponPrice"><text>¥</text><text class="price">{{item.reduce}}</text></view>
+      <view class="myCouponContext">
+        <view>满{{item.price}}元</view>
+        <view>减{{item.reduce}}元</view>
+      </view>
+    </view>
+    <!--优惠券按钮  -->
+    <view class="UsingButton"><button>立即使用</button></view>
+    <!--优惠券有效时间  -->
+    <view class="myCouponUsefulTime">
+      <text>有效日期截止</text><text>{{item.time}}</text>
+    </view>
+  </view>
+  <view class="myCouponRow" wx:for="{{coupon}}"
+  wx:for-index="index"wx:for-item="item">
+  <!--背景图  -->
+    <image src="../../images/myCoupon/myCouponBg.png"></image>
+    <!--优惠券内容  -->
+    <view class="myCouponDetail">
+      <view class="myCouponPrice"><text>¥</text><text class="price">{{item.reduce}}</text></view>
+      <view class="myCouponContext">
+      <view>减{{item.reduce}}元</view>
+        <view>无门槛</view>
+        
+      </view>
+    </view>
+    <!--优惠券按钮  -->
+    <view class="UsingButton"><button>立即使用</button></view>
+    <!--优惠券有效时间  -->
+    <view class="myCouponUsefulTime">
+      <text>有效日期截止</text><text>{{item.time}}</text>
+    </view>
+  </view>
+  <!--折扣  -->
+  <!--一个券 -->
+  <view class="myCouponReduceRow"  wx:for="{{discount}}"
+  wx:for-index="index"wx:for-item="item">
+  <!--背景图  -->
+    <image src="../../images/myCoupon/myCouponBg.png"></image>
+    <!--折扣券内容  -->
+    <view class="myCouponReduceDetail">
+      <view class="myCouponReducePrice"><text class="reduce">{{item.discount}}</text>折</view>
+      <view class="myCouponReduceText">
+        <view>满{{item.price}}元使用</view>
+      </view>
+    </view>
+    <!--优惠券按钮  -->
+    <view class="ReduceUsingButton"><button>立即使用</button></view>
+    <!--优惠券有效时间  -->
+    <view class="myCouponReduceUsefulTime">
+      <text>有效日期截止</text><text>{{item.time}}</text>
+    </view>
+  </view>
+  <!--无门槛的折扣券-->
+  <view class="myCouponReduceRow"  wx:for="{{discount}}"
+  wx:for-index="index"wx:for-item="item">
+  <!--背景图  -->
+    <image src="../../images/myCoupon/myCouponBg.png"></image>
+    <!--折扣券内容  -->
+    <view class="myCouponReduceDetail">
+      <view class="myCouponReducePrice"><text class="reduce">{{item.discount}}</text>折</view>
+      <view class="myCouponReduceText">
+        <view>无门槛</view>
+      </view>
+    </view>
+    <!--优惠券按钮  -->
+    <view class="ReduceUsingButton"><button>立即使用</button></view>
+    <!--优惠券有效时间  -->
+    <view class="myCouponReduceUsefulTime">
+      <text>有效日期截止</text><text>{{item.time}}</text>
+    </view>
+  </view>
+</view>

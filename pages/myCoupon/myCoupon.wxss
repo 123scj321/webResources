@@ -1,0 +1,135 @@
+/* pages/myCoupon/myCoupon.wxss */
+.myCouponContainer{
+  width:100%;
+  display: block;
+}
+/*一个优惠券  */
+.myCouponRow{
+  position:relative;
+  margin:24px auto;
+  width:318px;
+  height:164px;
+  overflow:hidden;
+  
+}
+.myCouponRow>image{
+  width:100%;
+  height:100%;
+}
+.myCouponDetail{
+  position:absolute;
+  height:62px;
+  top:30px;
+  left:47px;
+  width:224px;
+  /* border:1px solid #333; */
+  display:flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color:#fff;
+  
+}
+.myCouponPrice{
+  line-height:62px;
+}
+.myCouponPrice:first-child{
+  font-size:34px;
+  line-height:62px;
+}
+.myCouponPrice>.price{
+  font-size:72px;
+}
+.myCouponContext{
+  margin-top:9px;
+  height:46px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+/*按钮  */
+.UsingButton{
+  width:186px;
+  /* border:1px solid #333; */
+  position:absolute;
+  top:98px;
+  right:57px;
+  height:28px;
+  overflow:hidden;
+}
+.UsingButton>button{
+  border-radius: 8px;
+  height:28px;
+  line-height:28px;
+  color:#D12133;
+  background: #ffffff;
+  font-size:18px;
+  font-weight: bold;
+  font-family: "黑体";
+}
+.myCouponUsefulTime{
+  position: absolute;
+  top:132px;
+  right:90px;
+  color:#ffffff;
+  font-size:12px;
+}
+/*折扣  */
+.myCouponReduceRow{
+  position:relative;
+  margin:24px auto;
+  width:318px;
+  height:164px;
+  overflow:hidden;
+}
+.myCouponReduceRow>image{
+  width:100%;
+  height:100%;
+}
+.myCouponReduceDetail{
+  position:absolute;
+  height:62px;
+  top:20px;
+  left:47px;
+  width:224px;
+  /* border:1px solid #333; */
+  display:flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color:#fff;
+}
+.myCouponReducePrice{
+  font-size:34px;
+}
+.myCouponReducePrice>.reduce{
+  font-size:72px;
+}
+.myCouponReduceText{
+  line-height: 70px;
+  font-size:14px;
+}
+.ReduceUsingButton{
+  width:186px;
+  /* border:1px solid #333; */
+  position:absolute;
+  top:98px;
+  right:57px;
+  height:28px;
+  overflow:hidden;
+}
+.ReduceUsingButton>button{
+  border-radius: 8px;
+  height:28px;
+  line-height:28px;
+  color:#D12133;
+  background: #ffffff;
+  font-size:18px;
+  font-weight: bold;
+  font-family: "黑体";
+}
+.myCouponReduceUsefulTime{
+  position: absolute;
+  top:132px;
+  right:90px;
+  color:#ffffff;
+  font-size:12px;
+}

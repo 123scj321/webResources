@@ -1,0 +1,47 @@
+<!--pages/orderDetail/waitForPayment/waitForPayment.wxml-->
+<!--正在用餐  -->
+<view class="eatingContainer">
+  <!--订单详情标题  -->
+  <view class="detailTitle"><text>待支付</text></view>
+  <view class="detailTitleTime">剩余支付时间 <text>{{m}}:{{s}}</text> </view>
+  <!--订单详情列表  -->
+  <view class="detailList">
+    <!--订单详情列表内容  -->
+    <view class="detailListContext">
+    <!--一行  -->
+     <view class="detailListContextRow" wx:for="{{list}}"
+  wx:for-index="index"wx:for-item="item">
+        <view class="detailListContextImage">
+          <image src="{{item.productImage}}"></image>
+          <!--../../../images/myOrder/orderDetail/nothingImage.png-->
+        </view>
+        <view class="detailListContextProductName">
+          <text>{{item.productName}}</text>
+        </view>
+        <view class="detailListContextProductCount">
+          <text>X{{item.count}}</text>
+        </view>
+        <view class="detailListContextProductPrice">
+          <text><text>¥</text><text>{{item.price}}</text></text>
+        </view>
+      </view>
+    </view>
+    <view class='detailListContextRow' hidden="total==20">
+      <view class="detailListCouponText">满100减30</view>
+      <view class="detailListCouponText">-¥ 30.00</view>
+    </view>
+    <!--订单详情列表小计  -->
+    <view class="detailListCount">
+      <view class="totalContaier">
+        <text class="totalText">合计 </text>
+        <text class="totalPrice"><text class="fuhao">¥</text><text class="total">{{total}}</text></text>
+      </view>
+      <!--删除或支付按钮  -->
+      <view class="deleteOrPayOrderBtn">
+        <navigator class="deleteOrder" bindtap="deleteList">取消订单</navigator>
+        <navigator url="url" class="payOrder active">立即支付</navigator>
+      </view>
+    </view>
+  </view>
+</view>
+

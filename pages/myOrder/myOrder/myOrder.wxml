@@ -1,0 +1,15 @@
+<view class="orderDetailContainer">
+  <view class="orderRow" wx:for="{{data}}"
+  wx:for-index="index"wx:for-item="item">
+    <view class="orderLeft">
+      <view><text class="restaurantName">{{item.restaurantName}}</text></view>
+      <view  class='restaurantTime'><text class="date">{{item.time}}</text></view>
+      <view><view class="aSingle" id="{{item.again}}" bindtap="navigation">再来一单</view></view>
+    </view>
+    <view class="orderRight">
+      <view> <text class="eating">{{item.status}}</text></view>
+      <view class='count'><text >合计：</text><text class="price"><text class="fuhao">¥</text><text>{{item.total}}</text></text></view>
+      <view><view class="orderDetail active" id="{{item.url}}" bindtap="navigation">订单详情</view></view>
+    </view>
+  </view>
+</view>

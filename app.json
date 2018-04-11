@@ -1,0 +1,26 @@
+{
+  "pages":[
+     
+     "pages/index/index",
+    "pages/regist/regist", 
+    "pages/logs/logs",
+    "pages/myOrder/welcomeHome/welcomeHome",    
+    "pages/myOrder/beingSentOut/beingSentOut",
+    "pages/myOrder/waitForPayment/waitForPayment",
+    "pages/myOrder/completeOrder/completeOrder",
+    "pages/myOrder/myOrder/myOrder",
+    "pages/myOrder/nothing/noting",
+    "pages/myOrder/eating/eating",
+    "pages/myCoupon/myCoupon",
+    "pages/myCoupon/welcomeHome/welcomeHome",
+"pages/personInformation/personInformation/getAddress/addressDetail/addressDetail", "pages/personInformation/personInformation/getAddress/addressList/addressList",
+    "pages/personInformation/personInformation/powerSetting/powerSetting" ,
+    "pages/personInformation/personInformation/personInformation"                                   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#333333",
+    "navigationBarTitleText": "微信点餐",
+    "navigationBarTextStyle":"white"
+  }
+}

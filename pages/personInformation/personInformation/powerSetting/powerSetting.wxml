@@ -1,0 +1,15 @@
+<view class="addressListContainer">
+<!--一行内容  -->
+  <view class="addressListRow">
+    <view class="addressListRowContext">
+        <text>用户信息授权</text>
+        <switch type="switch" bindchange="EventHandle" checked="{{userChecked}}"/>
+      </view>
+  </view>
+  <view class="addressListRow">
+    <view class="addressListRowContext">
+        <text>用户地址授权</text>
+        <switch type="switch" disabled="true"/>
+      </view>
+  </view>
+</view>

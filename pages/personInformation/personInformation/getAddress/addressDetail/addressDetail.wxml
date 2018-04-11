@@ -1,0 +1,71 @@
+<!--pages/personInformation/getAddress/addressDetail/addressDetail.wxml-->
+<!--添加收货地址bigbox  -->
+<view class="addAddressDetail">
+<!--联系人  -->
+  <view class="relative">
+    <view class="relativeContainer">
+      <view class="relativeTitle">联系人</view>
+      <view class="relativeContainerContext">
+        <input class="relativeName" placeholder='{{name}}'></input>
+        <view class="relativeSex">
+          <view class="women {{gender==0?'active':''}}" id="0" bindtap="changeDenger">女士{{sex==0?active:''}}</view>
+          <view class="men {{gender==1?'active':''}}" id="1" bindtap="changeDenger">男士</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--电话  -->
+  <view class="phone">
+    <view class='phoneContainer'>
+      <view class='phoneTitle'>电话</view>
+      <view class="phoneContainerContext">
+        <input placeholder='{{tel}}' type="number"></input>
+      </view>
+    </view>
+  </view>
+  <!--地址  -->
+  <view class='address'>
+    <view class='addressContainer'>
+      <view class='addressTitle'>地址</view>
+      <view class="addressContainerContext">
+        <view class="chooseArea"><text>{{address[0].city}}</text>
+          <view class="sliper">
+            <view class="area">{{area}}</view>
+            <view class="other">
+              <view bindtap="changed" wx:for="{{arealist}}"
+  wx:for-index="index"wx:for-item="item" id="{{index}}">{{item}}</view>
+              <!--<view bindtap="changed">渭城区</view>
+              <view bindtap="changed">碑林区</view>
+              <view bindtap="changed">秦都区</view>-->
+            </view>
+          </view>
+        </view>
+        <view class="inputAddress"><input placeholder='{{address[0].detail}}'></input></view>
+      </view>
+    </view>
+  </view>
+  <!--门牌号  -->
+  <view class="door">
+     <view class='doorContainer'>
+      <view class='doorTitle'>门牌号</view>
+      <view class="doorContainerContext">
+        <input placeholder='{{door}}'></input>
+      </view>
+    </view>
+  </view>
+</view>
+<!--按钮  -->
+<view class="trueContainer">
+  <text>{{btn}}</text>
+</view>
+<!--填写地址超过5公里范围提示  -->
+<view class="areaAlertBox" style='display:none'>
+  <view class="areaAlertContainer">
+    <image src="../../../../../images/myInformation/error.png" class="error"></image>
+    <image src="../../../../../images/myInformation/errorBox.png" class="errorBox"></image>
+    <view class="areaAlert">
+      亲～ 您当前填写地址超出了配 送范围哦！请选择5公里 以内地址～ 
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,7 @@
+<!--pages/orderDetail/nothing/noting.wxml-->
+<view class="notingContainer">
+  <view class="nothingImage">
+    <image src="../../../images/myOrder/orderDetail/nothingImage.png"></image>
+  </view>
+  <view class="nothingText">暂无订单哦！</view>
+</view>

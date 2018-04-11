@@ -1,0 +1,68 @@
+<!--正在用餐  -->
+<view class="eatingContainer">
+  <!--订单详情标题  -->
+  <view class="detailTitle"><text>已过期订单</text></view>
+  <!--订单详情列表  -->
+  <view class="detailList">  
+    <!--订单详情列表内容  -->
+    <view class="detailListContext">
+    <!--一行  -->
+      <view class="detailListContextRow" wx:for="{{list}}"
+  wx:for-index="index"wx:for-item="item">
+        <view class="detailListContextImage">
+          <image src="{{item.productImage}}"></image>
+          <!--../../../images/myOrder/orderDetail/nothingImage.png-->
+        </view>
+        <view class="detailListContextProductName">
+          <text>{{item.productName}}</text>
+        </view>
+        <view class="detailListContextProductCount">
+          <text>X{{item.count}}</text>
+        </view>
+        <view class="detailListContextProductPrice">
+          <text><text>¥</text><text>{{item.price}}</text></text>
+        </view>
+      </view>
+    </view>
+    <view class='detailListContextRow' hidden="total<100">
+      <view class="detailListCouponText">满100减30</view>
+      <view class="detailListCouponText">-¥ 30.00</view>
+    </view>
+    <!--订单详情列表小计  -->
+    <view class="detailListCount">
+      <view class="totalContaier">
+        <text class="totalText">合计</text>
+        <text class="totalPrice"><text class="fuhao">¥</text><text class="total">{{total}}</text></text>
+      </view>
+    </view>
+    <!--订单详情列表标题  -->
+    <view class="detailListTitleContainer">
+      <view class="detailListTitle">
+        <view class="callServer" bindtap="deleteList">删除订单</view>
+        <view id="{{again}}" class="another" bindtap="again">再来一单</view>
+      </view>
+    </view>
+  </view>
+  <!--订单详情信息  -->
+  <view class="orderInfo">
+    <view class="orderInfoText">订单信息</view>
+    <view class="orderDetailList">
+    <view class="orderDetailListRow">
+        <text class="orderDetailListTitle">订单号</text>
+        <text class="orderDetailListTitle">{{orderDetail[0].orderId}}</text>
+      </view>
+      <view class="orderDetailListRow">
+        <text class="orderDetailListTitle">座位号</text>
+        <text class="orderDetailListTitle">{{orderDetail[0].tableId}}</text>
+      </view>
+      <view class="orderDetailListRow">
+        <text class="orderDetailListTitle">用餐方式</text>
+        <text class="orderDetailListTitle">{{orderDetail[0].eatway}}</text>
+      </view>
+      <view class="orderDetailListRow CancleBorder">
+        <text class="orderDetailListTitle">下单时间</text>
+        <text class="orderDetailListTitle">{{orderDetail[0].timedata}}</text>
+      </view>
+    </view>
+  </view>
+</view>

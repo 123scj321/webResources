@@ -1,0 +1,95 @@
+/* pages/orderDetail/orderDetail.wxss */c
+text{
+  margin:0px;
+  padding:0px;
+}
+/*我的订单页面  */
+.orderDetailContainer{
+width:100%;
+display:block;
+overflow:hidden;
+font-family:"黑体";
+}
+.orderRow{
+  border-bottom: 1px solid #979797;
+  margin:10px auto;
+  width:90%;
+  display:flex;
+  flex-flow: row;
+  height:110px;
+  justify-content: space-between;
+}
+/*左侧布局  */
+.orderLeft{
+display:flex;
+flex-flow: column;
+justify-content: space-between;
+flex:1;
+text-align: left;
+}
+.restaurantName{
+  font-size:14px;
+  color:#333;
+  font-family: "黑体";
+  margin:10px 0px;
+}
+.restaurantTime{
+  width:150px;
+  font-size:12px;
+  color:#979797;
+  margin:5px 0px;
+  font-family: "黑体";
+}
+.aSingle{
+  width:60px;
+  border:2px solid #F5A933;
+  border-radius:5px;
+  padding:4px 8px 4px 8px;
+  margin:10px 0px;
+  font-size:14px;
+  color:#F5A933;
+  font-family:"黑体";
+}
+/*右侧布局  */
+.orderRight{
+width:150px;
+display:flex;
+flex-flow: column;
+flex:1;
+text-align: right;
+justify-content: space-between;
+}
+.eating{
+  font:14px "黑体";
+  color:#333;
+}
+.count{
+  display: inline-block;
+  /* height:30px;
+  line-height: 30px; */
+  text-align: right;
+  font:14px "黑体";
+}
+.price{
+  font:18px "黑体";
+}
+.fuhao{
+  font-size:12px;
+}
+.orderDetail{
+  width:60px;
+  text-align: right;
+  border:2px solid #F5A933;
+  border-radius:5px;
+  padding:4px 8px 4px 8px;
+  font-size:14px;
+  margin:10px auto;
+  color:#F5A933;
+  font-family:"黑体";
+  display: inline-block;
+}
+/*被选中样式  */
+.active{
+  color:#fff;
+  background: #F5A933;
+}

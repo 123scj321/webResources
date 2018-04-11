@@ -1,0 +1,55 @@
+<!--欢迎回家页面  -->
+<view class="welcomeHomeImage">
+<!--顶部图片信息  -->
+  <view class="welcomeImage">
+    <image src="../../images/regest.png"></image>
+  </view>
+<!--底部用户信息  -->
+  <view class="welcomeUserInfo">
+    <form>
+      <view class="welcomeTitle">请输入手机登录后查看个人个人订单</view>
+      <view class="inputTel">
+        <view class="inputTelImage">
+        <image src="../../images/phone.png"></image>
+        </view>
+        <view class="inputTelText">
+        <input placeholder='请输入您的手机号' bindblur='loginPhone' type="number"></input>
+        <!--请输入您的手机号-->
+        </view>
+      </view>
+       <view class="yanzhengma">
+        <view class="yanzhengmaImage"><image src="../../images/yzm.png" style="width:35rpx;height:45rpx;"></image></view>
+        <view class="yanzhengmaInput">
+          <view>
+            <input class="yanzhengmContext" placeholder='请输入验证码' name="yzm" type='number' bindblur='yanZhengInput'></input>
+          </view>
+          <view>
+            <button class="yanzhengmaBtn" bindtap="yanzhengBtn">{{getText}}</button>
+          </view>
+        </view>
+      </view> 
+      <view class="loginButton">
+        <button bindtap='LoginCheckMyOrder'>登录查询</button>
+      </view>
+       <view>
+       <view class="skipLogin" url="" bindtap="skipLogin">跳过登录</view>
+      </view>
+    </form>
+  </view>
+</view>
+<!--跳过登录设置  -->
+<view class="skipLoginContainer" style='display:{{isShow}}'>
+  <view class="skipLoginBox">
+    <view class="skipLoginLeft">
+      <image src="../../images/welcome/welcomeLogo.png"></image>
+    </view>
+    <view class="skipLoginRight">
+      <view class="skipLoginRightImage"><image src="../../images/welcome/welcomeLogoBackground.png"></image></view>
+      <view class="skipLoginContext">跳过注册，就会无法积分累计 以及无法享受优惠了哦～</view>
+      <view class="skipLoginButton">
+        <button class="unLogin" bindtap='unLogin'>残忍跳过</button>
+        <button class="Login active" bindtap="skipLogin">立即注册</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,212 @@
+/* pages/personInformation/getAddress/addressDetail/addressDetail.wxss */
+page{
+  background: #f5f1ea;
+}
+.addAddressDetail{
+width:100%;
+margin:0 auto;
+padding:0;
+
+}
+.relative{
+  width:100%;
+  height:178rpx;
+  background:#ffffff;
+  margin-bottom:20rpx;
+}
+.relativeContainer{
+  /* margin-top:50rpx;  */
+  width:600rpx;
+  display: flex;
+  flex-flow: row;
+  margin:0rpx auto;
+}
+.relativeTitle{
+  margin-top:20rpx;
+  width:160rpx;
+  font-size:28rpx;
+}
+/*内容  */
+.relativeContainerContext{
+margin-top:20rpx;
+width:440rpx;
+height:100%;
+}
+.relativeName{
+  width:100%;
+  height:50%;
+  font-size:28rpx;
+}
+.relativeSex{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size:28rpx;
+}
+.women,.men{
+margin-top:30rpx;
+width:160rpx;
+height:40rpx;
+border:2px solid #f5a933;
+text-align: center;
+line-height: 40rpx;
+color:#f5a933;
+}
+.active{
+  color:#ffffff;
+  background-color: #f5a933;
+}
+/*电话  */
+.phone{
+width:100%;
+  height:88rpx;
+  background:#ffffff;
+  margin-bottom:20rpx;
+  line-height: 80rpx;
+}
+.phoneContainer{
+  width:600rpx;
+  margin:20rpx auto;
+  display: flex;
+  flex-flow: row;
+  font-size:28rpx;
+}
+.phoneContainerContext{
+  margin:15rpx auto;
+  width:350rpx;
+  height:50rpx;
+  line-height:50rpx;
+}
+/*地址  */
+.address{
+  width:100%;
+  height:178rpx;
+  background:#ffffff;
+  margin-bottom:20rpx;
+  line-height: 80rpx;
+}
+.addressContainer{
+  width:600rpx;
+  margin:20rpx auto;
+  display: flex;
+  flex-flow: row;
+  font-size:28rpx;
+}
+.addressContainerContext{
+  margin:15rpx auto;
+  width:350rpx;
+  height:50rpx;
+  line-height:50rpx;
+}
+.chooseArea{
+  position:relative;
+  width:120%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.area{
+  
+  width:100%;
+  height:48rpx;
+  text-align: center;
+}
+.inputAddress{
+margin-top:30rpx;
+}
+/*门牌号  */
+.door{
+  width:100%;
+  height:100rpx;
+  background:#ffffff;
+  margin-bottom:20rpx;
+  line-height: 80rpx;
+}
+.doorContainer{
+  width:600rpx;
+  margin:20rpx auto;
+  display: flex;
+  flex-flow: row;
+  font-size:28rpx;
+}
+.doorContainerContext{
+  margin:15rpx auto;
+  width:350rpx;
+  height:50rpx;
+  line-height:50rpx;
+}
+/*确认添加  */
+.trueContainer{
+  margin: 0 auto;
+  width:90%;
+  height:100rpx;
+  background: #f5a933;
+  text-align:center;
+  line-height: 100rpx;
+  color:#ffffff;
+  border-radius: 20rpx;
+}
+/*区域警告框  */
+.areaAlertBox{
+  background: rgba(0, 0, 0, 0.3);
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
+}
+.areaAlertContainer{
+  position: relative;
+  top:10%;
+  margin:0 auto;
+  width:90%;
+  height:400rpx;
+}
+.error{
+  width:300rpx;
+  height:500rpx;
+  position: absolute;
+  top:-32rpx;
+  left:25%; 
+}
+.errorBox{
+  width:96%;
+  height:360rpx;
+  position: absolute;
+  top:62%;
+}
+.areaAlert{
+  font-size:36rpx;
+  position: absolute;
+  top:360rpx;
+  left:86rpx;
+  width:74%;
+  height:170rpx;
+}
+/*
+下拉菜单
+*/
+.sliper{
+  position: absolute;
+  right:-35rpx;
+  display: block;
+  width:200rpx;
+  z-index:1000;
+  transition:all linear .5s;
+}
+.other{
+  width:90%;
+  height:0rpx;
+  overflow: auto;
+  display:none;
+  text-align: center; 
+}
+.sliper:hover .other{
+  display:block;
+  height:114rpx;
+transition: all .5s linear;
+}
+.sliper:hover .area{
+  border-bottom:none;
+}

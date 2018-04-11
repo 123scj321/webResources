@@ -1,0 +1,71 @@
+/* pages/personInformation/getAddress/addressList/addressList.wxss */
+page{
+  background: #f5f1ea;
+  font-family: "黑体";
+}
+.addressListContainer{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+.addressListRow{
+  width:100%;
+  height:220rpx;
+  background:#ffffff;
+  margin-bottom:10rpx;
+}
+.addressListRowContext{
+  width:680rpx;
+  height:148rpx;
+  display: flex;
+  flex-flow: row;
+  margin:0 auto;
+  padding-top:60rpx;
+  color:#575757;
+}
+.addressInformation{
+  width:600rpx;
+  /* color:#979797; */
+  
+}
+.address{
+  font-size:32rpx;
+}
+.userInfo{
+  font-size:24rpx;
+}
+.isDefaultAddress{
+  padding-top:20rpx;
+  width:100%;
+  display: flex;
+  flex-flow: row;
+  height:100rpx;
+  font-size:28rpx;
+  line-height: 50rpx;
+  color:#f5a933;
+}
+.isDefaultAddress image{
+  width:46rpx;
+  height:48rpx;
+  margin-right:20rpx;
+}
+/*图片  */
+.addAddress{
+  text-align: right;
+  width:80rpx;
+}
+.addAddress>image{
+  margin-top:50rpx;
+  width:48rpx;
+  height:48rpx;
+}
+.addAddressContainer{
+  position:fixed;
+  bottom: 0px;
+  width:100%;
+  height:100rpx;
+  background: #f5a933;
+  text-align:center;
+  line-height: 100rpx;
+  color:#ffffff;
+}

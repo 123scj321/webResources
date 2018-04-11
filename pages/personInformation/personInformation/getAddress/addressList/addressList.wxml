@@ -1,0 +1,30 @@
+<!--pages/personInformation/getAddress/addressList/addressList.wxml-->
+<view class="addressListContainer">
+  <radio-group class="radio-group" bindchange="radioChange">
+<!--一行内容  -->
+  <view class="addressListRow" wx:for="{{list}}"
+  wx:for-index="index"wx:for-item="item">
+    <view class="addressListRowContext">
+        <view class="addressInformation">
+          <view class="address">{{item.address[0].city}}{{item.address[0].area}}</view>
+          <view class="userInfo">
+            <text class="name">{{item.address[0].detail}}</text>
+            <text class="phone">{{item.tel}}</text>
+          </view>
+          <view class="isDefaultAddress" bindtap="defaultAddress" id="{{item.isDefault}}">
+        
+        <radio value="{{item.isDefault}}" checked="{{item.isDefault=='1'?true:false}}" color="#f5a933"/>
+          {{item.isDefault=='1'?'默认地址':'设置为默认地址'}}
+          </view>
+        </view>
+        <view class="addAddress">
+          <image src="{{item.addAddress}}" id="{{index}}" bindtap="fixAddress"></image>
+        </view>
+      </view>
+  </view>
+  </radio-group>
+</view>
+<!-- 新增地址 -->
+<view class="addAddressContainer" bindtap="intoAddAddress">
+  <text>新增地址</text>
+</view>
